@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400|Poppins:400');
+
+html {font-size: 16px;}
+
+p {margin-bottom: 1.25em;}
+
+h1, h2, h3, h4, h5 {
+  margin: 2.75rem 0 1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 4.209em;
+}
+
+h2 {font-size: 3em;}
+
+h3 {font-size: 2.369em;}
+
+h4 {font-size: 1.777em;}
+
+h5 {font-size: 1.333em;}
+
+small, .text_small {font-size: 0.75em;}
+
+/* link*/
+a:hover{
+    color: #fff;
+}
+
+/* body*/
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* nav */
+.site-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 101;
+    background: #353541;
+    padding: 0.25rem 0.5rem;
+    user-select: none;
+    height: 55px;
+}
+
+.icon-view {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.menu-panel {
+    position: fixed;
+    display: block;
+    width: 100%;
+    top: -20rem;
+    left: 0;
+    padding: 2rem 0;
+    background-color: black;
+    z-index: 5;
+}
+ 
+/*  Menu Panel Option Styles */
+.mobile-links {
+display: flex;
+flex-direction: column;
+align-content: center;
+justify-content: flex-end;
+}
+
+
+/* header */
+header{
+    margin-top: 55px;
+    background: #353541;
+    color: #fff;
+    text-align: center;
+}
+
+.f-left{
+    font-size: 2rem;
+    margin: 20px 0 0 20px;
+}
+
+.text-right{
+    text-align: center;
+}
+
+.head-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.go-up{
+    margin-top: -24px;
+}
+
+.selfie{
+    margin-bottom: 20px;
+    width: 100px;
+}
+
+.red-line{
+    background: #fb6470;
+    height: 3px;
+    width: 80px;
+    margin-left: calc(50% - 40px);
+    margin-bottom: 2rem;
+}
+
+.button{
+    border-radius: 5px;
+}
+
+.red{
+    padding: 8px 60px 10px 60px;
+    background: #fb6470;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.blue{
+    padding: 8px 80px 10px 80px;
+    background: #32bec7;
+    color: #fff;
+    margin: 30px 0 40px 0;
+}
+
+.but-cont{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+@media(min-width: 760px){
+    .but-cont{
+        flex-direction: row;
+        margin: 0 auto;
+        width: 500px;
+    }
+
+    .red, 
+    .blue{
+        margin: 0 auto;
+    }
+
+    .red{
+        margin-right: 2vw;
+    }
+
+    .blue{
+        margin-left: 2vw;
+    }
+}
+
+/* main */
+main{
+    text-align: center;
+}
+
+/* Skills */
+.skills-cont{
+    display: flex;
+    flex-direction: column;
+}
+
+.skills{
+    width: 230px;
+    height: 230px;
+    padding-bottom: 25px;
+    margin: 0 auto;
+}
+.hidden{
+    display: none;
+}
+
+@media(min-width: 760px){
+    .hidden{
+        display: block
+    }
+
+    .skills-cont{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .skills-cont div{
+        flex: 50%;
+        padding: 0 50px;
+    }
+
+    h4.hidden{
+        font-weight: bolder;
+    }
+
+    .red-line{
+        display: none;
+    }
+
+    section h2{
+        font-size: 60px;
+        font-weight: bolder;
+    }
+
+    .pspace{
+        padding: 0 60px;
+    }
+
+    .grey{
+        color: #aba9a9;
+    }
+
+    .rline{
+        background: #fb6470;
+        height: 3px;
+        width: 80px;
+        margin-left: calc(50% - 40px);
+        margin-bottom: 2rem;
+    }
+
+    .get-in-touch{
+        font-weight: 400;
+    }
+}
+@media(min-width: 1200px){
+    .skills-cont{
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .skills-cont div{
+        flex: 25%;
+        /* padding: 0 50px; */
+        justify-content: space-between;
+    }
+
+    .push{
+        margin-bottom: 47px;
+    }
+
+    .left-please{
+        margin-left: -60px;
+    }
+}
+
+/* Find */
+.icons img{
+    width: 70px;
+}
+
+.icons{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icons div{
+    flex: 33%;
+}
+
+.codepen,
+.twitter{
+    flex: 50%;
+}
+
+.codepen{
+    margin-left: 12vw;
+}
+
+.twitter{
+    margin-right: 12vw;
+}
+
+.lgrey{
+    color: #bcc9ce;
+}
+
+@media(min-width: 760px){
+    .icons{
+        flex-wrap: nowrap;
+    }
+
+    .codepen{
+        margin-left: 0px;
+    }
+
+    .twitter{
+        margin-right: 0px;
+    }
+
+    .find{
+        background: #889ea8;
+        color: #fff;
+    }
+
+    .dspace{
+        margin-bottom: 50px;
+    }
+}
+
+@media(min-width: 1200px){
+    .red{
+        margin-right: 20px;
+    }
+
+    .blue{
+        margin-left: 20px;
+    }
+}
+
+/* work experience */
+.work-experience{
+    display: flex;
+    flex-direction: column;
+}
+
+.work-box h3{
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.work-box{
+    width: 365px;
+    height: 180px;
+    text-align: left;
+    padding: 0 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.green-box{
+    margin-left: 5vw;
+    background: #7ac943;
+}
+
+.blue-box{
+    margin-right: 5vw;
+    margin-left: auto;
+    background: #3fa9f5;
+}
+
+
+/* education */
+.education{
+    background: #f4f1f4;
+    display: flex;
+    flex-direction: column;
+}
+
+.education-box{
+    width: 440px;
+    height: 210px;
+    text-align: left;
+    padding: 0 25px;
+    margin-bottom: 30px;
+    background: #353541;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.education-box h3{
+    font-size: 18px;
+    margin-top: 23px;
+}
+
+.ed-left{
+    margin-left: 3vw;
+    
+}
+
+.ed-right{
+    margin-right: 3vw;
+    margin-left: auto;
+}
+
+
+/* Get in touch */
+.get-in-touch{
+    margin: 0 auto;
+}
+
+.gtouch{
+    text-align: left;
+    width: 440px;
+    margin: 0 auto;
+}
+
+.gtouch input{
+    width: 440px;
+    border: 2px solid black;
+    border-radius: 8px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.gtouch textarea{
+    height: 130px;
+    border-radius: 8px;
+    width: 440px;
+    border: 2px solid black;
+}
+
+.gtouch label{
+    font-size: 14px;
+    font-style: italic;
+    margin-left: 20px;
+    margin-bottom: -10px;
+}
+
+/* footer */
+footer{
+    text-align: center;
+    margin-top: 80px;
+}
+
+footer p{
+    font-size: 11px;
+    margin-top: -10px;
+}
